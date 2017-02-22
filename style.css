@@ -14,79 +14,62 @@ body {
     font-style: normal;
     font-weight: normal;
 }
-#central{
+.central{
   display: block;
   margin: 30%;
 }
-.first-page{
+.first-page, .second-page, .third-page{
   position: absolute;
   border: 2px solid #000;
-  background-color: #acacac;
   width: 519px;
   height: 746px;
+}
+.first-page{
+  background-color: #acacac;
   margin: 39px 40px;
 }
-.first-stic{
-  position: relative;
-  border-bottom-right-radius: 10px;
-  border-top-right-radius: 10px;
-  border: 2px solid #000;
-  background-color: #00aeef;
-  width: 95px;
-  height: 31px;
-  top: 48px;
-  left: 440px;
-}
 .second-page{
-  position: absolute;
-  border: 2px solid #000;
   background-color: #cccccc;
-  width: 519px;
-  height: 746px;
   margin: 20px 21px;
 }
-.second-stic{
-  position: relative;
-  border-bottom-right-radius: 10px;
-  border-top-right-radius: 10px;
-  border: 2px solid #000;
-  background-color:  #39b54a;
-  width: 95px;
-  height: 31px;
-  top: 43px;
-  left: 472px;
-}
 .third-page{
-  position: absolute;
-  border: 2px solid #000;
   background-color: #ebebeb;
-  width: 519px;
-  height: 746px;
   padding-left: 33px;
   padding-right: 30px;
   box-sizing: border-box;
 }
-.third-stic{
-  position: relative;
+.first-stic, .second-stic, .third-stic{
+  position: absolute;
   border-bottom-right-radius: 10px;
   border-top-right-radius: 10px;
   border: 2px solid #000;
-  background-color: #f68e56;
-  width: 107px;
+  width: 95px;
   height: 31px;
+}
+.first-stic{
+  background-color: #00aeef;
+  top: 48px;
+  right: -16px;
+ }
+.second-stic{
+  background-color:  #39b54a;
+  top: 43px;
+  right: -48px;
+}
+.third-stic{
+  width: 107px;
+  background-color: #f68e56;
   top: 39px;
-  left: 461px;
+  right: -86px;
 }
 h1{
   font-size: 1.5em;
   font-weight: 400;
-  margin-top: -4px;
+  margin-top: 24px;
 }
 article{
   font-size: 0.75em;
-  font-weight: 400; 
 }
-
 img[src="images/cup.png"]{
   float: left;
   width: 207px;
@@ -131,7 +114,6 @@ visibility: hidden;
 }
 footer p{
   font-size: 0.56em;
-  font-weight: 400;
   text-align: center;
 }
 .bottom-right{
@@ -149,8 +131,25 @@ h3 {
   text-align: center;
   margin: 5%;
 }
-.bottom-right img{
-  width: 79px; 
+.fb, .twi, .insta{
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  top: 33px;
+  width: 26px;
   height: 22px;
-  margin: 5%;
+  display: block;
+}
+.fb{
+  left: 3px;
+  background: url('images/icons.png') 0 0;
+}
+.twi{
+  left: 32px;
+  background: url('images/icons.png') -27px 0;
+}
+.insta{
+  left: 60px;
+  background: url('images/icons.png') -54px 0;
 }
